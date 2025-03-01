@@ -17,6 +17,7 @@ class Animal(Base):  # Это модель БД, создаёт таблицу "
     sex = Column(String)
     description = Column(String)
     photo_url = Column(String)
+    contacts = Column(String)
 
 # Создаём таблицы в БД
 Base.metadata.create_all(bind=engine)
